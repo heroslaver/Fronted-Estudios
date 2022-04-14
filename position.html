@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background: peachpuff;
+            position: relative;
+            top: 20px;
+        }
+        .item {
+            /* se posicion segun el relativo mas cercano, y pierde su espacio con respecto a los otros elementos relative */
+            width: 20px;
+            height: 20px;
+            background: blue;
+            position: absolute;
+            right: 0;
+        }
+        nav {
+            /* te sigue apenas nos topemos con el */
+            width: 100%;
+            height: 60px;
+            background: lightblue;
+            position: fixed;
+        }
+        ul p{
+            /* se adiere al ult sticky que tengamos cuando nos desplacemos con el scroll, se necesita varios sticky */
+            position: sticky;
+            top:30px;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, doloribus. Pariatur non perspiciatis, accusantium voluptate aliquam ullam reiciendis totam hic sunt eos ex eligendi at aspernatur, fugiat a. Molestiae, enim!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cumque animi qui praesentium asperiores nam atque laudantium, possimus eius fugit explicabo quos accusamus earum facere consequuntur, dolorum, dignissimos excepturi similique. * 5   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus voluptatibus, nisi officiis, laborum vitae fugit ea, quaerat magnam dignissimos exercitationem aliquid. Tempora facilis at ipsum esse, numquam rem minima?
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod commodo diam, nec elementum velit scelerisque eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec turpis non massa maximus ultrices eget vitae quam. Morbi molestie tortor elementum turpis euismod, eu fringilla elit rutrum. Vestibulum congue mi a malesuada volutpat. Vivamus laoreet, dui in laoreet placerat, augue eros feugiat tortor, eleifend venenatis quam metus ut dui. Nulla facilisi. Nulla urna nisi, interdum et sagittis non, condimentum sed metus. Aliquam id purus feugiat eros vestibulum vestibulum. Vivamus faucibus ipsum nisi, in gravida dui finibus et.
+        Nam tellus enim, molestie at risus eu, aliquet porta erat. Aenean finibus aliquet rutrum. Quisque ut quam id tortor sollicitudin convallis. Nunc a faucibus ligula. Aenean ac convallis enim, et tincidunt dui. Maecenas sodales blandit mauris, ac efficitur dolor iaculis eget. Aliquam ultricies arcu id vulputate vehicula. Sed mattis, nulla ac imperdiet rhoncus, risus turpis finibus nibh, sit amet lobortis purus nibh non nibh.
+        Pellentesque congue elementum neque, ac sagittis tellus feugiat quis. Integer posuere sit amet quam sed lobortis. Vivamus hendrerit nibh sollicitudin risus varius, et ornare odio placerat. Duis imperdiet dolor at justo consequat semper. Maecenas efficitur consequat purus, id efficitur nisi ornare ut. Aenean ut sapien id libero porttitor convallis auctor nec arcu. Duis egestas enim in magna fringilla, eget egestas purus aliquam. Morbi mattis quam enim, ut vehicula justo vulputate a. Fusce tincidunt varius dolor, sit amet malesuada neque faucibus eu. Praesent ultricies erat id enim lacinia, vitae maximus odio fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar metus ac rutrum ornare. Aenean sed libero diam.
+        Donec dictum finibus elit pretium tristique. In hac habitasse platea dictumst. Pellentesque ut eros dolor. Sed at elit sem. Pellentesque ac laoreet ante, vitae eleifend odio. Pellentesque laoreet accumsan dolor, eget egestas sapien. Integer lobortis at augue ut viverra. Sed bibendum auctor eleifend. Maecenas non dolor in eros pretium pulvinar nec nec metus. Proin dignissim sagittis eros, in ultricies leo mollis et. Curabitur semper libero eu nisl molestie consectetur. Integer vel interdum ligula, eu tempor dui. Sed mollis tempus orci in faucibus. Praesent vel feugiat arcu, a consectetur urna.
+        Nullam consectetur, diam et pulvinar ornare, nibh odio laoreet ipsum, ut lobortis nulla dui non mauris. Pellentesque libero libero, molestie sed mollis quis, aliquam et neque. Ut id tempor lorem. Morbi ut luctus dolor. Aliquam erat volutpat. Donec at pretium metus. Aenean blandit neque quis quam feugiat, id malesuada ligula luctus. Donec vel euismod elit. Phasellus neque risus, sagittis convallis massa ut, porta aliquam lectus. Fusce metus est, imperdiet in nunc id, eleifend mollis velit. Aliquam porta ipsum tortor, at mattis purus pulvinar at. Donec eleifend malesuada ante, quis bibendum lacus fringilla euismod. Morbi eget justo nec ex accumsan faucibus. Quisque mattis erat eget egestas dignissim. Maecenas interdum massa nec tortor efficitur accumsan. Morbi dapibus pulvinar augue, ut condimentum sapien feugiat sed.
+    </p>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+    <ul>
+        <p>Frutas</p>
+        <li>Pera</li>
+        <li>Manzana</li>
+        <li>Sandia</li>
+    </ul>
+</body>
+</html>

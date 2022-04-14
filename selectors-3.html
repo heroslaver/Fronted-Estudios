@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:rgb(73, 113, 201);
+        }
+        p:hover{
+            color:red;
+        }
+        p::first-letter(2){
+            color:black;
+        }
+        p::before{
+            content: "😋";
+        }
+        p::after{
+            content: "💪🏽";
+        }
+        div p:nth-child(3){
+            color:rgb(123, 255, 0);
+        }
+        ::placeholder{
+            color:tomato;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola,</p>
+    <div>
+        <p>Platzi</p>
+        <p>Me la</p>
+        <p>Pela</p>
+    </div>
+    <input type="text" placeholder="Hola chiquita 😘,Escribeme tu numero">
+</body>
+</html>

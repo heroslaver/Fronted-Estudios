@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* comando necesario para activar todas las funcionalidades de flexbox, solo se usa cuando es un contenedor padre */
+            display: flex;
+            background: papayawhip;
+            /* alinea los elementos segun el eje */
+            justify-content: center;
+            /* centra los elementos   */
+            align-items: center;
+            /* este define el eje */
+            flex-direction: column;
+            height: 200px;
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            background: purple;
+        }
+        /* colorea cada numero impar */
+        .container .item:nth-child(2n+1){
+            background:aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
+
+<!-- Atencion: juego para aprender a manejar flexbox: https://flexboxfroggy.com/#es ,https://mastery.games/flexboxzombies/, -->
+<!-- https://flukeout.github.io/ -->
+<!-- ATENCION: pagina para buscar la documentacion de flexbox  http://css-tricks.com/snippets/css/a-guide-to-flexbox/   -->

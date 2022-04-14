@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position:absolute;
+            background: palegoldenrod;
+        }
+        .one{
+            /* Te dice que elemento va a ir primero al fondo, siendo el 1 mas al fondo  */
+            z-index: 5;
+        }
+        .two{
+            z-index: 4;
+        }
+        .red {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            width: 200px;
+            height: 200px;
+            color:white;
+            background: rgb(255,0,0);
+            background: radial-gradient(circle, rgba(255,0,0,0.6839110644257703) 0%, rgba(69,34,34,0.938813025210084) 100%);
+            z-index: 4;
+        }
+        .blue{
+            display:flex;
+            justify-content: flex-end;
+            padding:50px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 50px;
+            left: 300px;
+            width: 200px;
+            height: 200px;
+            color:white;
+            background: rgb(0,42,255);
+            background: radial-gradient(circle, rgba(0,42,255,0.6839110644257703) 0%, rgba(34,36,69,1) 100%);
+            z-index: 3;
+        }
+        .yellow{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            color:white;
+            background: rgb(245,255,0);
+            background: radial-gradient(circle, rgba(245,255,0,0.6839110644257703) 0%, rgba(68,69,34,0.938813025210084) 100%);
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">Platzi</div>
+    <div class="two">Me la pelo</div>
+    <section>
+        <div class="blue">
+            blue
+            <div class="yellow">yellow</div>
+        </div>
+        <div class="red">red</div>
+    </section>
+</body>
+</html>
